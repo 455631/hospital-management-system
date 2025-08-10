@@ -12,7 +12,7 @@ const MessageForm=()=>{
     const handleMessage=async(e)=>{
         e.preventDefault();
         try{
-        await axios.post("http://localhost:4000/api/v1/message/send",{firstName,phone,lastName,email,message},{withCredentials:true,
+        await axios.post("https://hospital-management-system-f3ww.onrender.com/api/v1/message/send",{firstName,phone,lastName,email,message},{withCredentials:true,
             headers:{
                 "Content-Type":"application/json",
             },
